@@ -8,7 +8,7 @@ Project only for didatic learning
 <br />
 <p align="center">
   <a href="https://github.com/digomes87/basec-json">
-    <img src="img/jpeg." alt="Logo" width="80" height="80">
+    <img src="img/jpeg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">PROJECT: Json</h3>
