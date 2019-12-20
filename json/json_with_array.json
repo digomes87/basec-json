@@ -1,0 +1,10 @@
+{
+  "holiday":["Saturday","Sunday"],
+  "multiples_3":[3,6,9,12,15,18,21],
+  "passed":[true, false, true],
+  "array_with_array":[[2,4,6,8,10],[3,6,9,12,15,18],[4,8,12,16,20]],
+  "employees": [
+      {"name":"Jonh Smill","id":12, "departament":"account"},
+      {"name":"Anne Dell", "id":34, "departament":"sales"}
+  ]
+}
