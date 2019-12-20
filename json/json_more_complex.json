@@ -1,0 +1,93 @@
+{
+  "Inspirational":[
+                    {
+                      "title": "Chorar de alegria",
+                      "author": "Brunna Mancuso",
+                      "price": 22.70
+                    },
+
+                    {
+                      "title": "A Elite Prateada",
+                      "author": "L. C. Almeida",
+                      "price": 7.32
+                    },
+
+                    {
+                      "title": "Flor do Texas",
+                      "author": "Monica Cristina",
+                      "price": 12.00
+                    },
+
+                    {
+                      "title": "Bem- Vindo à rua maravilha",
+                      "author": "Gabriel Mar",
+                      "price": 6.99
+                    },
+
+                    {
+                      "title": "Meu Presente",
+                      "author": "Marta Vianna",
+                      "price": 1.99
+                    }
+                    
+                  ],
+  "ficcao":[
+        {
+          "title":"O menino do Pijama Listrado",
+          "author":"John Boyne",
+          "price": 29.19
+        },
+        {
+          "title":"Contos para Garotos",
+          "author":"G.L Marvel",
+          "price": 36.00
+        },
+        {
+          "title":"Como Seria sua vida na idade média ?",
+          "author":"Fiona Macdonald",
+          "price": 8.94
+        },
+        {
+          "title":"Guerreiro da Tempestade",
+          "author":"Bernard Cornwell",
+          "price": 35.70
+        },
+        {
+          "title":"O capital para Crianças",
+          "author":"Liliana Fortuny",
+          "price": 28.80
+        },
+        {
+          "title":"Portões de Fogo",
+          "author":"Steven Pressfield",
+          "price": 25.14
+        }
+      ],
+  "misterio":[
+        {
+          "title": "Mortos nao contam segredos",
+          "author": "Karen M. McManus",
+          "price": 27.81
+        },
+        {
+          "title": "Um de nós esta mentindo",
+          "author": "Karen M. McManus",
+          "price": 40.40
+        },
+        {
+          "title": "O milésimo andar",
+          "author": "Katharine McGee",
+          "price": 24.42
+        },
+        {
+          "title": "O pesadelo",
+          "author": "Joseph Delaney",
+          "price": 34.50
+        },
+        {
+          "title": "Maldosas",
+          "author": "Sara Shepard",
+          "price": 15.68
+        }
+      ]  
+}
