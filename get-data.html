@@ -8,6 +8,16 @@
   <script>
     var person = {"FistName":"Diego", "lastName":"Go"};
     alert(`${person.FistName} ${person.lastName}`);
+
+    // another forme for use javsacritp
+    var person2 = {
+      "firstName": "Joao",
+      "lastName": "Silveira",
+      fullName: function(){
+        return(`${this.firstName} ${this.lastName}`)
+      }
+    }
+    document.write(person2.fullName())
   </script>
 </head>
 <body>
