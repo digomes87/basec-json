@@ -5,10 +5,14 @@
   "experiencia": {
     "linguagens":["Php","Python","Java","Swift","c++"],
     "idioma": ["Portugues","espanhol","ingles"],
-    "endereco":{
+    "endereco": {
       "estado": "Parana",
       "cidade": "Cwb",
-      "pais": "Brasil"
+      "pais": "Brasil",
+      "contato": {
+        "cel": 12312312,
+        "office":12212313
+      }
     }
   }
 }
