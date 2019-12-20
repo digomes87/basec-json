@@ -1,0 +1,14 @@
+{
+  "address": {
+      "street": "Abc Street",
+      "city": "Toledo",
+      "state": "PR",
+      "postCode": 899232
+  },
+
+  "phone": {
+    "ddd": 45,
+    "cel": 98987823,
+    "tel": 334523212
+  }
+}
