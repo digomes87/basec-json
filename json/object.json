@@ -1,0 +1,7 @@
+{
+  "age":32, "marks": 54, "year":2019, "pi":3.14,
+  "firstName":"Diego", "book":"Python",
+  "comment": "Python is much better,\"but with react can be awesome\" ",
+  "isMarried": false, "passed":true, "blind":false,
+  "hobbies":null, "languages":null
+}
