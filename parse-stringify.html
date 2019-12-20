@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Json parse and JSON stringify</title>
+</head>
+<body>
+  <script>
+    let jsonData = '{"name":"Diego","sobrenome":"Go"}';
+    console.log(typeof(jsonData));
+
+    let jsObject = JSON.parse(jsonData);
+    console.log(typeof(jsObject));
+
+    document.write(`${jsObject.name} ${jsObject.sobrenome} <br><hr>`)
+    // saida sera Diego Go 
+
+
+    console.log('####another exemplo#####')
+
+    let jsObject2 = {name:"Joao",sobrenome:"Silveira"}
+    let jsonString = JSON.stringify(jsObject2)
+    document.write(`${jsonString}`)
+    // saida sera {"name":"Joao","sobrenome":"Silveira"}
+  </script>
+</body>
+</html>
