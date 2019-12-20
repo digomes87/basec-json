@@ -12,6 +12,8 @@
     let jsObject = JSON.parse(jsonData)
     
     document.write(`Codigo ${jsObject.cod} <br>`)
+    // is possible access this modo
+    document.write(`Codigo ${jsObject["cod"]} <br>`) 
     document.write(`Temperatura ${jsObject.list[0].dt}<br>`)
     document.write(`temp min ${jsObject.list[0].main.temp_min}<br>`)
     document.write(`Pressao ${jsObject.list[0].weather[0].description}<br>`)
