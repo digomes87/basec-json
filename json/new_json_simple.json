@@ -1,0 +1,14 @@
+{
+  "name": "Diego",
+  "idade": 32,
+  "hobby": ["Pedalada","Trilha", "cachoeira","viagens","computadores"],
+  "experiencia": {
+    "linguagens":["Php","Python","Java","Swift","c++"],
+    "idioma": ["Portugues","espanhol","ingles"],
+    "endereco":{
+      "estado": "Parana",
+      "cidade": "Cwb",
+      "pais": "Brasil"
+    }
+  }
+}
