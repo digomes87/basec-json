@@ -11,6 +11,10 @@
 # Icon must end with two \r
 Icon
 
+#my key, this is not the correct but function for me now
+.env.js
+
+
 # Thumbnails
 ._*
 
