@@ -5,6 +5,18 @@ This repo is for learning more about json and how can use this in rest.
 Project only for didatic learning
 # 
 
+Some basic Git commands are:
+```
+  Runner this project 
+  git clone https://github.com/digomes87/basec-json.git
+
+  I used int fews project api fixer and for you can runner, you need create account there.
+  After create account 
+  create a new file with name env.js
+  Inside past
+  const KEY='YOUR-KEY-HERE'
+```
+
 <br />
 <p align="center">
   <a href="https://github.com/digomes87/basec-json">

@@ -8,8 +8,6 @@
   <title>Get Data</title>
   <script src="env.js"></script>
   <script>
-    console.log(KEY);
-    
     function collectJson() {
       var xmlhhtp = new XMLHttpRequest()
       xmlhhtp.open("GET", `http://data.fixer.io/api/latest?access_key=${KEY}`, false)
