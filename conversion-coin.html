@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Get Data</title>
+  <script src="env.js"></script>
+  <script>
+    console.log(KEY);
+    
+    function collectJson() {
+      var xmlhhtp = new XMLHttpRequest()
+      xmlhhtp.open("GET", `http://data.fixer.io/api/latest?access_key=${KEY}`, false)
+      xmlhhtp.send()
+
+      if (xmlhhtp.readyState == 4 && xmlhhtp.status == 200) {
+        let resul = xmlhhtp.responseText
+        document.getElementById("show").innerHTML = resul
+      } else {
+        document.getElementById("show").innerHTML = "Erroooooooo"
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <button id="btnClick" onclick="collectJson()">Testar o Collect</button>
+  <div class="show" id="show"></div>
+</body>
+
+</html>
