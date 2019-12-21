@@ -10,7 +10,8 @@
   <script>
     function collectJson() {
       var xmlhhtp = new XMLHttpRequest()
-      xmlhhtp.open("GET", `http://data.fixer.io/api/latest?access_key=${KEY}`, false)
+      // https://economia.awesomeapi.com.br/all/USD-BRL
+      xmlhhtp.open("GET", `http://data.fixer.io/api/latest?access_key=${KEY}?rate=BRL`, false)
       xmlhhtp.send()
 
       if (xmlhhtp.readyState == 4 && xmlhhtp.status == 200) {
