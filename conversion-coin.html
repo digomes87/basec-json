@@ -1,32 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
+  <meta author="Diego Go">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Get Data</title>
-  <script src="env.js"></script>
-  <script>
-    function collectJson() {
-      var xmlhhtp = new XMLHttpRequest()
-      // https://economia.awesomeapi.com.br/all/USD-BRL
-      xmlhhtp.open("GET", `http://data.fixer.io/api/latest?access_key=${KEY}?rate=BRL`, false)
-      xmlhhtp.send()
-
-      if (xmlhhtp.readyState == 4 && xmlhhtp.status == 200) {
-        let resul = xmlhhtp.responseText
-        document.getElementById("show").innerHTML = resul
-      } else {
-        document.getElementById("show").innerHTML = "Erroooooooo"
-      }
-    }
-  </script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="js/main.js"></script>
 </head>
 
 <body>
-  <button id="btnClick" onclick="collectJson()">Testar o Collect</button>
-  <div class="show" id="show"></div>
+  <button id="btnClick" onclick="converter()">Testar o Collect</button>
+  <div class="container">
+    <div class="show" id="show">
+      <h2 class="">Currente Converser</h2>
+      <table>
+        <tr>
+          <td><input type="text" id="fromAmout" placeholder="10 $"></td>
+          <td>
+            <select name="form" id="from" onchange="converter()">
+              <option value="AUD"> Australlian Dollar</option>
+              <option value="BGN"> Bulgarian Lev</option>
+              <option value="CAD"> Canadian Dollar</option>
+              <option value="CHF"> Swiss Franc</option>
+              <option value="DKK"> Danish Krone</option>
+              <option value="GBP"> Pound Sterling</option>
+              <option value="ILS"> Israeli New Shekel</option>
+              <option value="INR"> Indian Rupee</option>
+              <option value="JPY"> Japanese Yen</option>
+              <option value="PHP"> Philippine Peso</option>
+              <option value="USD" selected> Us Dolar</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" id="toAmout" disabled></td>
+          <td>
+            <select name="form" id="to" onchange="converter()">
+              <option value="AUD"> Australlian Dollar</option>
+              <option value="BGN"> Bulgarian Lev</option>
+              <option value="CAD"> Canadian Dollar</option>
+              <option value="CHF"> Swiss Franc</option>
+              <option value="DKK"> Danish Krone</option>
+              <option value="GBP"> Pound Sterling</option>
+              <option value="ILS"> Israeli New Shekel</option>
+              <option value="INR"> Indian Rupee</option>
+              <option value="JPY"> Japanese Yen</option>
+              <option value="PHP"> Philippine Peso</option>
+              <option value="USD"> Us Dolar</option>
+              <option value="BRL" selected> Brazil Real</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
 </body>
-
 </html>
