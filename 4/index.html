@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task</title>
+</head>
+<body>
+  <h1>Json Task</h1>
+  <div id="output">
+    <ul id="taskList"></ul>
+  </div>
+  <script>
+    const data = '{"tasks":{"Cut Grass": false, "Clean Room":false,"Go to Gym":true, "Make Dinner":false}}';
+    const dataJson = JSON.parse(data)
+
+    var output = document.getElementById('output')
+    var taskList = document.querySelector('#taskList')
+    
+    for(var key in dataJson.tasks){
+      console.log(key, dataJson.tasks[key])
+      var status = !dataJson.tasks[key]? '':'checked'
+      var html = `<li> ${key} <input type="checkbox" value=${key} ${status}></li>`
+      taskList.innerHTML += html
+    }
+    addEvents()
+
+    function addEvents(){
+      var checkBoxes = document.querySelectorAll('#taskList input[type="checkbox"]');
+      for(var index in checkBoxes){
+        checkBoxes[index].onchange = updateJSON
+      }
+      console.log(checkBoxes)
+    }
+    
+    function updateJSON(){
+      var key = event.target.value
+      dataJson.tasks[key] = event.target.checked
+      console.log(key)
+    }
+  </script>
+</body>
+</html>
